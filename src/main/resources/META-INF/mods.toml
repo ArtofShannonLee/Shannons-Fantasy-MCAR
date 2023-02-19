@@ -9,7 +9,7 @@ modLoader="javafml" #mandatory
 loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
-license=
+license='Open source'
 # A URL to refer people to when problems occur with this mod
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
@@ -33,8 +33,7 @@ credits="This mod would not exist if not for the incredible MCA Reborn Mod." #op
 # A text field displayed in the mod UI
 authors="Art of Shannon Lee" #optional
 # The description text for the mod (multi line!) (#mandatory)
-description=
-"This mod expands upon the existing MCA Reborn mod, adding MCA villagers of various fantasy races."
+description= "This mod expands upon the existing MCA Reborn mod, adding MCA villagers of various fantasy races."
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.shannonsfantasymcar]] #optional
     # the modid of the dependency

@@ -1,4 +1,4 @@
-package live.artofshannonlee.shannonsfantasymcar;
+package com.artofshannonlee.shannonsfantasymcar;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 @Mod("shannonsfantasymcar")
 public class ShannonsFantasyMCAR
 {
+    public static final String MOD_ID = "shannonsfantasymcar";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -48,7 +49,6 @@ public class ShannonsFantasyMCAR
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
