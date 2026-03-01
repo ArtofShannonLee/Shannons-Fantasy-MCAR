@@ -7,12 +7,16 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        // MixinGradle:
+        classpath 'org.spongepowered:mixingradle:0.7.+'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 // edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+// MixinGradle:
+apply plugin: 'org.spongepowered.mixin'
 
 version = '1.16.5_0.1.0'
 group = 'com.artofshannonlee.shannonsfantasymcar' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -130,8 +134,8 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft "net.minecraftforge:forge:1.16.5-36.2.39"
-    implementation fg.deobf("curse.maven:MCAReborn-535291:4353507")
-    implementation fg.deobf("curse.maven:ArchitecturyAPI-419699:3857643")
+    implementation fg.deobf("curse.maven:mca-535291:4353507")
+    implementation fg.deobf("curse.maven:architectury-419699:3857643")
         // You may put jars on which you depend on in ./libs or you may define them like so..
         // compile "some.group:artifact:version:classifier"
         // compile "some.group:artifact:version"

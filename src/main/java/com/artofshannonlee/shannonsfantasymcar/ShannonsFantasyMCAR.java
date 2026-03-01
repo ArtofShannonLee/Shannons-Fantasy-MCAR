@@ -82,3 +82,5 @@ public class ShannonsFantasyMCAR
         }
     }
 }
+// Register setup method for modloading
+ModEntityTypes.register(eventBus)}

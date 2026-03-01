@@ -55,13 +55,13 @@ description= "This mod expands upon the existing MCA Reborn mod, adding MCA vill
     ordering="NONE"
     side="BOTH"
 [[dependencies.shannonsfantasymcar]]
-    modId="mcareborn"
+    modId="mca"
     mandatory=true
     versionRange="[7.3.23,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.shannonsfantasymcar]]
-    modId="architecturyapi"
+    modId="architectury"
     mandatory=true
     versionRange="[1.32.66,)"
     ordering="NONE"
